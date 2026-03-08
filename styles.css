@@ -1,0 +1,141 @@
+/* CSS Variables for a Nautical Theme */
+:root {
+    --navy-blue: #0A192F;
+    --sail-white: #FFFFFF;
+    --sand-beige: #F4EED1;
+    --light-blue: #A2D5F2;
+    --anchor-gray: #4A5568;
+    --font-family-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-family-headings: 'Georgia', serif; /* A bit more classic for headings */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family-base);
+    background-color: var(--sand-beige);
+    color: var(--navy-blue);
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: var(--navy-blue);
+    color: var(--sail-white);
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 5px solid var(--light-blue);
+}
+
+header h1 {
+    font-family: var(--font-family-headings);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-style: italic;
+    color: var(--light-blue);
+    font-size: 1.2rem;
+}
+
+/* Main Content */
+main {
+    padding: 40px 0;
+}
+
+h2 {
+    font-family: var(--font-family-headings);
+    color: var(--navy-blue);
+    border-bottom: 2px solid var(--navy-blue);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* About Section */
+.about {
+    background-color: var(--sail-white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+/* Reviews Section */
+.reviews {
+    margin-top: 30px;
+}
+
+.review-card {
+    background-color: var(--sail-white);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-left: 6px solid var(--light-blue);
+}
+
+.review-content {
+    padding: 20px;
+}
+
+.review-content h3 {
+    font-family: var(--font-family-headings);
+    color: var(--navy-blue);
+    margin-bottom: 5px;
+}
+
+.location {
+    color: var(--anchor-gray);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.rating {
+    font-weight: bold;
+    color: var(--navy-blue);
+    margin-bottom: 15px;
+}
+
+.review-text {
+    font-style: italic;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: var(--navy-blue);
+    color: var(--sail-white);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 5px solid var(--light-blue);
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: var(--light-blue);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
