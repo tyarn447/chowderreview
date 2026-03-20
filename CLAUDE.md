@@ -73,6 +73,7 @@ Required fields:
 - All pages link `styles.css` from the same directory
 - Nautical theme: navy blue (`#0A192F`), sail white (`#FFFFFF`), sand beige (`#F4EED1`), light blue (`#A2D5F2`)
 - New posts must also get a card added to `index.html` in the `.reviews` section
+- **New cards go at the top of the `.reviews` section** — most recent post first
 
 ## Adding a Post to index.html
 Paste a new `.review-card` div into the reviews section:
@@ -94,10 +95,14 @@ Paste a new `.review-card` div into the reviews section:
 - Essays: descriptive kebab-case (e.g., `bacon-downfall-chowder.html`)
 
 ## Current Posts
+Listed newest first — this is the order they appear in `index.html`.
+
 | File | Type | Status |
 |------|------|--------|
+| `hugh-oneills-review.html` | Hate piece / essay | Complete |
+| `granary-tavern-review.html` | Review | Under construction |
 | `estella-chowder-review.html` | Review | Has lorem ipsum — needs real content |
-| `pearl-station-review.html` | Review | Under construction |
+| `pearl-station-review.html` | Review | Complete |
 | `chowder-rating-philosophy.html` | Essay | Under construction |
 | `bacon-downfall-chowder.html` | Essay | Under construction |
 | `cracker-modern-dilemma.html` | Essay | Under construction |
